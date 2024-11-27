@@ -1,0 +1,194 @@
+theory:
+  camb:
+    extra_args:
+      halofit_version: mead
+      bbn_predictor: PArthENoPE_880.2_standard.dat
+      lens_potential_accuracy: 1
+      num_massive_neutrinos: 1
+      nnu: 3.046
+likelihood:
+  redshiftremapping:
+    external: import_module('likelihood_DES').your_likelihood_function
+  redshiftremapping2:
+    external: import_module('likelihood_DESI').your_likelihood_function
+  planck_2018_lowl.TT: null
+  planck_2018_lowl.EE: null
+  planck_2018_highl_plik.TTTEEE: null
+  planck_2018_lensing.clik: null
+params:
+  TCMB:
+    prior:
+      min: 3.0
+      max: 3.4
+  logA:
+    prior:
+      min: 2.9
+      max: 3.2
+    ref:
+      dist: norm
+      loc: 3.05
+      scale: 0.001
+    proposal: 0.001
+    latex: \log(10^{10} A_\mathrm{s})
+    drop: true
+  As:
+    value: 'lambda logA: 1e-10*np.exp(logA)'
+    latex: A_\mathrm{s}
+  ns:
+    prior:
+      min: 0.9
+      max: 1.05
+    ref:
+      dist: norm
+      loc: 0.965
+      scale: 0.004
+    proposal: 0.002
+    latex: n_\mathrm{s}
+  H0T:
+     prior:
+        min: 60.
+        max: 70.
+     ref:
+        dist: norm
+        loc: 67.5
+        scale: 1.
+     proposal: 1.
+     drop: True
+  H0:
+    value: "lambda H0T, TCMB: H0T*(TCMB/2.7255)**(-1.2)"
+    latex: H_0
+  Ha0:
+    value: "lambda H0, TCMB: H0*(2.7255/TCMB)"
+    latex: H_0
+  ombh2T:
+    prior:
+      min: 0.01
+      max: 0.05
+    ref:
+      dist: norm
+      loc: 0.0224
+      scale: 0.0001
+    proposal: 0.0224
+    drop: True
+  ombh2: 
+    value: 'lambda ombh2T, TCMB: ombh2T*(TCMB/2.7255)**3.'
+  omch2T:
+    prior:
+      min: 0.1
+      max: 0.15
+    ref:
+      dist: norm
+      loc: 0.12
+      scale: 0.001
+    proposal: 0.12
+    latex: \Omega_\mathrm{c} \hat{h}_{a}^2
+  omch2: 
+    value: 'lambda omch2T, TCMB: omch2T*(TCMB/2.7255)**3.'
+  omegam:
+    latex: \Omega_\mathrm{m}
+  omegamh2:
+    derived: 'lambda omegam, H0: omegam*(H0/100)**2'
+    latex: \Omega_\mathrm{m} h^2
+  mnu: 0.06
+  omega_de:
+    derived: 'lambda omegam, : 1-omegam'
+    latex: \Omega_\Lambda
+  YHe:
+    latex: Y_\mathrm{P}
+  Y_p:
+    latex: Y_P^\mathrm{BBN}
+  DHBBN:
+    derived: 'lambda DH: 10**5*DH'
+    latex: 10^5 \mathrm{D}/\mathrm{H}
+  tau:
+    prior:
+      min: 0.01
+      max: 0.1
+    ref:
+      dist: norm
+      loc: 0.055
+      scale: 0.006
+    proposal: 0.055
+    latex: \tau_\mathrm{reio}
+  zre:
+    latex: z_\mathrm{re}
+  sigma8:
+    latex: \sigma_8
+  s8h5:
+    derived: 'lambda sigma8, H0: sigma8*(H0*1e-2)**(-0.5)'
+    latex: \sigma_8/h^{0.5}
+  s8omegamp5:
+    derived: 'lambda sigma8, omegam: sigma8*omegam**0.5'
+    latex: \sigma_8 \Omega_\mathrm{m}^{0.5}
+  s8omegamp25:
+    derived: 'lambda sigma8, omegam: sigma8*omegam**0.25'
+    latex: \sigma_8 \Omega_\mathrm{m}^{0.25}
+  A:
+    derived: 'lambda As: 1e9*As'
+    latex: 10^9 A_\mathrm{s}
+  clamp:
+    derived: 'lambda As, tau: 1e9*As*np.exp(-2*tau)'
+    latex: 10^9 A_\mathrm{s} e^{-2\tau}
+  age:
+    latex: '{\rm{Age}}/\mathrm{Gyr}'
+  rdrag:
+    latex: "r_{d}"
+    prior:
+      min: 100
+      max: 170
+    proposal: 134.8
+  rdragT:
+    value: "lambda rdrag, TCMB: rdrag*(TCMB/2.7255)"
+    latex: r_\mathrm{drag}T
+  w: -1
+  wa: 0
+  a:
+    prior:
+      min: -0.5
+      max: 0
+    proposal: -0.21
+  b:
+    prior:
+      min: -0.5
+      max: 0
+    proposal: -0.20
+  c:
+    prior:
+      min: -0.7
+      max: -0
+    proposal: -0.17
+  d:
+    prior:
+      min: -0.4
+      max: 0
+    proposal: -0.11
+  d1:
+    prior:
+      min: 0
+      max: 0.2
+    proposal: 0.175
+  d2:
+    prior:
+      min: 0
+      max: 0.1
+    proposal: 0.082
+  btheta: 
+    derived: 'lambda b: np.log((1.5+b*0.5)/1.5)'
+  ctheta: 
+    derived: 'lambda c: np.log((2+c)/2)'
+  dtheta: 
+    derived: 'lambda d: np.log((3.5+d*2.5)/3.5)'
+  Hobs: 
+    derived: 'lambda H0, d1: H0/(1-d1)'
+    latex: 'H_{obs}'
+sampler:
+  mcmc:
+    drag: true
+    oversample_power: 0.4
+    proposal_scale: 1.9
+    covmat: auto
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.2
+    max_tries: 5000000
+output: 'final_constraints/conformal_flatlCDM_full_with_DES_v2/conformal_flatlCDM_full_with_DES_v2'
+resume: true

@@ -1,0 +1,70 @@
+likelihood:
+  redshiftremapping:
+    external: import_module('likelihood_DES').your_likelihood_function
+params:
+  omegam:
+    latex: "\\Omega_{m}"
+    prior:
+      min: 0.3
+      max: 0.99
+    proposal: 0.334
+  Ha0:
+    prior:
+      min: 20
+      max: 120
+    proposal: 73.6
+    latex: 'H_{a0}'
+  rdragT:
+    latex: "r_{d}"
+    prior:
+      min: 100
+      max: 200
+    proposal: 147
+  w: -1
+  wa: 0
+  a:
+    prior:
+      min: -0.4
+      max: 0
+    proposal: -0.21
+  b:
+    prior:
+      min: -0.4
+      max: 0
+    proposal: -0.2
+  c:
+    prior:
+      min: -0.4
+      max: 0
+    proposal: -0.17
+  d:
+    prior:
+      min: -0.4
+      max: 0
+    proposal: -0.11
+  d1:
+    prior:
+      min: -0.3
+      max: 0.3
+    proposal: 0.175
+  d2:
+    prior:
+      min: 0
+      max: 0.1
+    proposal: 0.082
+  btheta:
+    derived: 'lambda b: np.log((1.5+b*0.5)/1.5)'
+  ctheta:
+    derived: 'lambda c: np.log((2+c)/2)'
+  dtheta:
+    derived: 'lambda d: np.log((3.5+d*2.5)/3.5)'
+  Hobs:
+    derived: 'lambda Ha0, d1: Ha0/(1-d1)'
+    latex: H_{obs}
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    max_tries: 500000
+
+output: 'final_constraints/conformal_pantheon/conformal_pantheon'
+resume: true
