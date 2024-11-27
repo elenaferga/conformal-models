@@ -25,7 +25,7 @@ Here you can find all the data used in this proyect:
 - `pantheon_sn.txt/`: Hubble diagram from Pantheon+ (can also be downloaded [here](https://github.com/PantheonPlusSH0ES/DataRelease/tree/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR)).
 - `Pantheon+SH0ES_STAT+SYS.cov/`: covariance matrix Pantheon+ (can also be downloaded [here](https://github.com/PantheonPlusSH0ES/DataRelease/tree/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR)).
 
-### **3. likelihoods/** 📔
+### **3. likelihoods/** ⚖️
 Here you can find the likelihoods defined for each of the data mentioned above:
 
 - `conformal_models/DESI.py`: file that calculates the likelihood from DESI with conformal transformation.
@@ -35,7 +35,7 @@ Here you can find the likelihoods defined for each of the data mentioned above:
 - `standard_models/DES.py`: file that calculates the likelihood from DES using the standard FLRW metric. 
 - `standard_models/pantheon.py`: file that calculates the likelihood from Pantheon+ using the standard FLRW metric. 
 
-### **4. yaml_files/** 📈
+### **4. yaml_files/** 📂
 Here you can find the configuration files (.yaml) necessary in order to run the MCMC chains using Cobaya for different combinations of the datasets:
 
 - `conformal_models/DESI_Planck_Pantheon.yaml`: configuration file needed to compute the MCMC chain using DESI, Planck 2018 and Pantheon+ with conformal transformation in the $\Lambda$-CDM model.
@@ -52,7 +52,7 @@ Here you can find the configuration files (.yaml) necessary in order to run the 
 
 ---
 
-## Installation 🧑‍🔬
+## Installation ⬇️
 
 1. Clone the repository:
    ```bash
