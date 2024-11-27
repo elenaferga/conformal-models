@@ -1,15 +1,15 @@
-import redshift_remappingLZ as redshift_remapping
+import redshift_remapping_Pantheon as redshift_remapping
 import numpy as np
 from scipy.interpolate import CubicSpline
 import matplotlib.pyplot as plt
 import pandas as pd
 
-def your_likelihood_function(omegam, w, wa, Ha0, rdragT, a, b, c, d, d1, d2):
+def your_likelihood_function(omegam, w, wa, Ha0, a, b, c, d, d1, d2):
     omegal = 1-omegam
     if not (a <= b <= c <= d):
         return -np.inf
     else:
-        model = redshift_remapping.Redshift_Remapping(omegam, omegal, w, wa, Ha0, rdragT, a, b, c, d, d1, d2)
+        model = redshift_remapping.Redshift_Remapping(omegam, omegal, w, wa, Ha0, a, b, c, d, d1, d2)
 
         # Load data
         file_path = 'pantheon_sn.txt'
@@ -43,6 +43,4 @@ def your_likelihood_function(omegam, w, wa, Ha0, rdragT, a, b, c, d, d1, d2):
 
         etotal = error_mag
         return -etotal / 2  # Return the log-likelihood
-def get_H0rdrag(H0, rdrag):
-    return H0*rdrag
-    
+
