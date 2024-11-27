@@ -4,8 +4,14 @@ from scipy.interpolate import CubicSpline
 import matplotlib.pyplot as plt
 import pandas as pd
 
-def your_likelihood_function(omegam, w, wa, Ha0, rdragT, a, b, c, d, d1, d2):
+def your_likelihood_function(omegam, w, wa, Ha0, rdragT:
     omegal = 1-omegam
+    a=0
+    b=0
+    c=0
+    d=0
+    d1=0
+    d2=0
     if not (a <= b <= c <= d):
         return -np.inf
     else:
