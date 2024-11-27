@@ -1,8 +1,8 @@
 likelihood:
   redshiftremapping:
-    external: import_module('likelihood_standard').your_likelihood_function
+    external: import_module('pantheon').your_likelihood_function
   redshiftremapping2:
-    external: import_module('likelihood_DESI_standard').your_likelihood_function
+    external: import_module('DESI').your_likelihood_function
 params:
   omegam:
     latex: "\\Omega_{m}"
