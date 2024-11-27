@@ -43,7 +43,7 @@ Aquí se almacenan los resultados obtenidos, como gráficos, tablas, y reportes.
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/Conformal-Models.git
+   git clone https://github.com/elenaferga/Conformal-Models.git
 
 2. Instalar dependencias:
    ```bash
