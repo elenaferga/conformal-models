@@ -1,7 +1,7 @@
 # Conformal Models Repository 🌌
 
 This repository contains all the files related with the project **Exploring Redshift-Scale Factor Relations in Cosmological Models with DESI**. Check these two papers for more information:
--  [Wojtak, R. & Prada, F. 2017, MNRAS, 458, 3331](https://ui.adsabs.harvard.edu/abs/2016MNRAS.458.3331W/abstract)
+-  [Wojtak, R. & Prada, F. 2016, MNRAS, 458, 3331](https://ui.adsabs.harvard.edu/abs/2016MNRAS.458.3331W/abstract)
 - [Wojtak, R. & Prada, F. 2017, MNRAS, 470, 4493](https://ui.adsabs.harvard.edu/abs/2017MNRAS.470.4493W/abstract)
 
 
