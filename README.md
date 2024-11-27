@@ -38,17 +38,17 @@ Here you can find the likelihoods defined for each of the data mentioned above:
 ### **4. yaml_files/** 📈
 Here you can find the configuration files (.yaml) necessary in order to run the MCMC chains using Cobaya for different combinations of the datasets:
 
-- `conformal_models/DESI_Planck_Pantheon.yaml`: configuration file needed to compute the MCMC chain using DESI, Planck 2018 and Pantheon+ with conformal transformation in the LCDM model.
+- `conformal_models/DESI_Planck_Pantheon.yaml`: configuration file needed to compute the MCMC chain using DESI, Planck 2018 and Pantheon+ with conformal transformation in the $\Lambda$CDM model.
 - `conformal_models/DESI_Planck_Pantheon_CDM.yaml`: configuration file needed to compute the MCMC chain using DESI, Planck 2018 and Pantheon+ with conformal transformation in the CDM model.
-- `conformal_models/DESI_planck_DES.yaml`: configuration file needed to compute the MCMC chain using DESI, Planck 2018 and DES with conformal transformation in the LCDM model.
+- `conformal_models/DESI_planck_DES.yaml`: configuration file needed to compute the MCMC chain using DESI, Planck 2018 and DES with conformal transformation in the $\Lambda$CDM model.
 - `conformal_models/full_w.yaml`: configuration file needed to compute the MCMC chain using DESI, Planck 2018 and Pantheon+ with conformal transformation in the wCDM model.
 - `conformal_models/full_w0wa.yaml`: configuration file needed to compute the MCMC chain using DESI, Planck 2018 and Pantheon+ with conformal transformation in the w0waCDM model.
-- `conformal_models/pantheon.yaml`: configuration file needed to compute the MCMC chain using Pantheon+ with conformal transformation in the LCDM model.
-- `conformal_models/planck.yaml`: configuration file needed to compute the MCMC chain Planck 2018 with conformal transformation in the LCDM model.
+- `conformal_models/pantheon.yaml`: configuration file needed to compute the MCMC chain using Pantheon+ with conformal transformation in the $\Lambda$CDM model.
+- `conformal_models/planck.yaml`: configuration file needed to compute the MCMC chain Planck 2018 with conformal transformation in the $\Lambda$CDM model.
 - `conformal_models/planck_CDM.yaml`: configuration file needed to compute the MCMC chain Planck 2018 with conformal transformation in the CDM model.
-- `standard_models/DESI_Planck_pantheon.yaml`: configuration file needed to compute the MCMC chain DESI, Planck and Pantheon+  with conformal transformation in the LCDM model.
-- `standard_models/DESI_pantheon.yaml`: configuration file needed to compute the MCMC chain DESI and Pantheon+  with conformal transformation in the LCDM model.
-- `standard_models/pantheon.yaml`: configuration file needed to compute the MCMC chain Pantheon+ with conformal transformation in the LCDM model.
+- `standard_models/DESI_Planck_pantheon.yaml`: configuration file needed to compute the MCMC chain DESI, Planck and Pantheon+  with conformal transformation in the $\Lambda$CDM model.
+- `standard_models/DESI_pantheon.yaml`: configuration file needed to compute the MCMC chain DESI and Pantheon+  with conformal transformation in the $\Lambda$CDM model.
+- `standard_models/pantheon.yaml`: configuration file needed to compute the MCMC chain Pantheon+ with conformal transformation in the $\Lambda$CDM model.
 
 ---
 
