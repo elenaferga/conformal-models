@@ -12,10 +12,10 @@ Esta carpeta contiene las transformaciones de las distancias según la métrica 
 ### **2. data/** 📊
 Esta carpeta contiene todos los datos utilizados o generados en el proyecto, incluyendo simulaciones, catálogos y resultados intermedios.
 
-- `DES-SN5YR_HD.csv/`: Hubble diagram from DES-SN-Y5 CITA.
--  `DES MATRIZ COVARIANZA/`: covariance matrix DES .
-- `pantheon_sn.txt/`: Hubble diagram from Pantheon+ CITA.
-- `Pantheon MATRIZ COVARIANZA/`: covariance matrix Pantheon+ .
+- `DES-SN5YR_HD.csv/`: Hubble diagram from DES-SN-Y5 CITA (can also be downloaded [here](https://github.com/des-science/DES-SN5YR/tree/main/4_DISTANCES_COVMAT)) 
+-  `STAT+SYS.txt.gz`: covariance matrix DES (download it [here](https://github.com/des-science/DES-SN5YR/tree/main/4_DISTANCES_COVMAT)) 
+- `pantheon_sn.txt/`: Hubble diagram from Pantheon+ (can also be downloaded [here](https://github.com/PantheonPlusSH0ES/DataRelease/tree/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR)).
+- `Pantheon+SH0ES_STAT+SYS.cov/`: covariance matrix Pantheon+ (can also be downloaded [here](https://github.com/PantheonPlusSH0ES/DataRelease/tree/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR)).
 
 ### **3. scripts/** 💻
 Incluye los scripts de Python u otros lenguajes utilizados para análisis, simulaciones o procesamiento de datos.
