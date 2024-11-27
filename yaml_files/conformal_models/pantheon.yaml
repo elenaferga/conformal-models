@@ -1,6 +1,6 @@
 likelihood:
   redshiftremapping:
-    external: import_module('likelihood_DES').your_likelihood_function
+    external: import_module('pantheon').your_likelihood_function
 params:
   omegam:
     latex: "\\Omega_{m}"
@@ -66,5 +66,5 @@ sampler:
     Rminus1_stop: 0.01
     max_tries: 500000
 
-output: 'final_constraints/conformal_pantheon/conformal_pantheon'
+output: 'conformal_pantheon/conformal_pantheon'
 resume: true
