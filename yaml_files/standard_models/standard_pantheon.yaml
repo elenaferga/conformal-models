@@ -1,0 +1,30 @@
+likelihood:
+  redshiftremapping:
+    external: import_module('likelihood_standard').your_likelihood_function
+params:
+  omegam:
+    latex: "\\Omega_{m}"
+    prior:
+      min: 0.25
+      max: 0.4
+    proposal: 0.334
+  H0:
+    prior:
+      min: 60
+      max: 80
+    proposal: 73.6
+    latex: 'H_{a0}'
+  rdrag:
+    latex: "r_{d}"
+    prior:
+      min: 100
+      max: 200
+    proposal: 147
+
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    max_tries: 500000
+
+output: 'final_constraints/standard_flatlCDM_pantheon/standard_flatlCDM_pantheon'
+resume: true
