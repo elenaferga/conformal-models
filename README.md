@@ -6,44 +6,36 @@ Este repositorio contiene los archivos y recursos relacionados con el proyecto *
 
 ## Estructura del Repositorio 📁
 
+### **1. conformal_model_equations/** 📚
+Esta carpeta contiene las transformaciones de las distancias según la métrica conforme
 
-### **1. data/** 📊
+### **2. data/** 📊
 Esta carpeta contiene todos los datos utilizados o generados en el proyecto, incluyendo simulaciones, catálogos y resultados intermedios.
 
-- `raw_data/`: Archivos de datos originales sin procesar.
-- `processed_data/`: Datos procesados o transformados listos para su análisis.
+- `DES-SN5YR_HD.csv/`: Hubble diagram from DES-SN-Y5 CITA.
+-  `DES MATRIZ COVARIANZA/`: covariance matrix DES .
+- `pantheon_sn.txt/`: Hubble diagram from Pantheon+ CITA.
+- `Pantheon MATRIZ COVARIANZA/`: covariance matrix Pantheon+ .
 
-### **2. scripts/** 💻
+### **3. scripts/** 💻
 Incluye los scripts de Python u otros lenguajes utilizados para análisis, simulaciones o procesamiento de datos.
 
 - `analysis.py`: Script para realizar análisis de los datos procesados.
 - `plotting.py`: Herramientas para visualización de datos.
 - `simulation.py`: Código para generar simulaciones cosmológicas.
 
-### **3. notebooks/** 📔
+### **4. likelihoods/** 📔
 Carpeta dedicada a los Jupyter Notebooks utilizados para explorar y analizar los datos.
 
 - `exploration.ipynb`: Notebook para explorar datos iniciales.
 - `visualization.ipynb`: Gráficos y análisis visuales.
 
-### **4. results/** 📈
+### **5. yaml_files/** 📈
 Aquí se almacenan los resultados obtenidos, como gráficos, tablas, y reportes.
 
 - `figures/`: Carpeta con las figuras generadas durante el análisis.
 - `tables/`: Resultados en formato de tablas.
 - `final_results/`: Resultados finales listos para publicar.
-
-### **5. docs/** 📚
-Documentación adicional sobre el proyecto, incluyendo artículos, referencias o guías técnicas.
-
-- `literature/`: Archivos relacionados con el estado del arte.
-- `guides/`: Guías para replicar los experimentos.
-
-### **6. utils/** 🛠️
-Scripts y funciones auxiliares utilizados en varios aspectos del proyecto.
-
-- `helpers.py`: Funciones generales de soporte.
-- `constants.py`: Constantes usadas en los cálculos cosmológicos.
 
 ---
 
