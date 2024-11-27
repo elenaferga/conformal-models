@@ -20,7 +20,7 @@ Here you can find the files with the equations of the distances conformally tran
 ### **2. data/** 📊
 Here you can find all the data used in this proyect:
 
-- `DES-SN5YR_HD.csv/`: Hubble diagram from DES-SN-Y5 CITA (can also be downloaded [here](https://github.com/des-science/DES-SN5YR/tree/main/4_DISTANCES_COVMAT)) 
+- `DES-SN5YR_HD.csv/`: Hubble diagram from DES-SN-Y5 (can also be downloaded [here](https://github.com/des-science/DES-SN5YR/tree/main/4_DISTANCES_COVMAT)) 
 -  `STAT+SYS.txt.gz`: covariance matrix DES (download it [here](https://github.com/des-science/DES-SN5YR/tree/main/4_DISTANCES_COVMAT)) 
 - `pantheon_sn.txt/`: Hubble diagram from Pantheon+ (can also be downloaded [here](https://github.com/PantheonPlusSH0ES/DataRelease/tree/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR)).
 - `Pantheon+SH0ES_STAT+SYS.cov/`: covariance matrix Pantheon+ (can also be downloaded [here](https://github.com/PantheonPlusSH0ES/DataRelease/tree/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR)).
