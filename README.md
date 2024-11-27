@@ -67,6 +67,6 @@ Here you can find the configuration files (.yaml) necessary in order to run the 
 
 If you would like to contrubute, please popen an issue or send a pull request. All the contributions are welcome. You can also send me an e-mail (see below).
 
-# Contacto ✉️
+# Contact ✉️
 
 For any consult, please contact me at efdez@iaa.es
