@@ -52,7 +52,7 @@ Here you can find the configuration files (.yaml) necessary in order to run the 
 
 ---
 
-## Cómo Usar este Repositorio 🧑‍🔬
+## Installation 🧑‍🔬
 
 1. Clone the repository:
    ```bash
@@ -65,7 +65,6 @@ Here you can find the configuration files (.yaml) necessary in order to run the 
 
 # Contributions 🤝
 
-Si deseas contribuir, por favor abre un issue o envía un pull request. Todas las contribuciones son bienvenidas.
 If you would like to contrubute, please popen an issue or send a pull request. All the contributions are welcome. You can also send me an e-mail (see below).
 
 # Contacto ✉️
