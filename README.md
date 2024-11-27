@@ -1,10 +1,13 @@
 # Conformal Models Repository 🌌
 
-Este repositorio contiene los archivos y recursos relacionados con el proyecto **Conformal-$\Lambda$CDM models as a hint of the missing pieces of the standard model**. A continuación, se describe la estructura del repositorio y el propósito de cada carpeta y archivo.
+This repository contains all the files related with the project **Exploring Redshift-Scale Factor Relations in Cosmological Models with DESI**. Check these two papers for more information:
+-  [Wojtak, R. & Prada, F. 2017, MNRAS, 458, 3331](https://ui.adsabs.harvard.edu/abs/2016MNRAS.458.3331W/abstract)
+- [Wojtak, R. & Prada, F. 2017, MNRAS, 470, 4493](https://ui.adsabs.harvard.edu/abs/2017MNRAS.470.4493W/abstract)
+
 
 ---
 
-## Estructura del Repositorio 📁
+## Structure of the respository 📁
 
 ### **1. conformal_model_equations/** 📚
 Here you can find the files with the equations of the distances conformally transformed for three different cases:
