@@ -43,6 +43,4 @@ def your_likelihood_function(omegam, w, wa, Ha0, a, b, c, d, d1, d2):
 
         etotal = error_mag
         return -etotal/2    
-def get_H0rdrag(H0, rdrag):
-    return H0*rdrag
-    
+
