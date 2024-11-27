@@ -17,18 +17,15 @@ Esta carpeta contiene todos los datos utilizados o generados en el proyecto, inc
 - `pantheon_sn.txt/`: Hubble diagram from Pantheon+ (can also be downloaded [here](https://github.com/PantheonPlusSH0ES/DataRelease/tree/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR)).
 - `Pantheon+SH0ES_STAT+SYS.cov/`: covariance matrix Pantheon+ (can also be downloaded [here](https://github.com/PantheonPlusSH0ES/DataRelease/tree/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR)).
 
-### **3. scripts/** 💻
-Incluye los scripts de Python u otros lenguajes utilizados para análisis, simulaciones o procesamiento de datos.
-
-- `analysis.py`: Script para realizar análisis de los datos procesados.
-- `plotting.py`: Herramientas para visualización de datos.
-- `simulation.py`: Código para generar simulaciones cosmológicas.
-
 ### **4. likelihoods/** 📔
 Carpeta dedicada a los Jupyter Notebooks utilizados para explorar y analizar los datos.
 
-- `exploration.ipynb`: Notebook para explorar datos iniciales.
-- `visualization.ipynb`: Gráficos y análisis visuales.
+- `conformal_models/likelihood_DES.py`: Notebook para explorar datos iniciales.
+- `conformal_models/likelihood_with_DES.py`: Notebook para explorar datos iniciales.
+- `conformal_models/pantheon.py`: Notebook para explorar datos iniciales.
+- `standard_models/exploration`: Notebook para explorar datos iniciales.
+- `standard_models/exploration`: Notebook para explorar datos iniciales.
+- `standard_models/exploration`: Notebook para explorar datos iniciales.
 
 ### **5. yaml_files/** 📈
 Aquí se almacenan los resultados obtenidos, como gráficos, tablas, y reportes.
