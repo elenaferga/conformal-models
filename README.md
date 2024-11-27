@@ -13,7 +13,7 @@ This repository contains all the files related with the project **Exploring Reds
 Here you can find the files with the equations of the distances conformally transformed for three different cases:
 
 - `redshift_remapping.py`: file that contains all the conformally transformed distances. This can be used when we are able to constrain rdrag.
-- `redshift_remapping_pantheon.py`: fila that contains all the conformally transformed distances. This can be used for SNIa, where rdrag and Ha0 cannot be constrained (we need Cepehids or CMB as callibrators)
+- `redshift_remapping_pantheon.py`: file that contains all the conformally transformed distances. This can be used for SNIa, where rdrag and Ha0 cannot be constrained (we need Cepehids or CMB as callibrators)
 - `redshift_remapping_DESI.py`: file that contains all the conformally transformed distances. This can be used for BAO distance,s where we can constrain rdrag*Ha0, but not rdrag or Ha0 independently.
 
 
