@@ -62,6 +62,11 @@ Here you can find the configuration files (.yaml) necessary in order to run the 
    ```bash
    pip install -r requirements.txt
 
+
+# Citations 📄
+
+If you use these codes, please cite...
+
 # Contributions 🤝
 
 If you would like to contrubute, please open an **issue** or send a **pull request**. All the contributions are welcome. You can also send me an e-mail (see below).
